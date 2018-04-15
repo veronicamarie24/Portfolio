@@ -1,0 +1,217 @@
+/**
+* Veronica Valenzuela Portfolio
+* Main CSS File
+* Created December 15, 2017
+**/
+
+@font-face {
+    font-family: 'HeaderFont';
+    src: url('fonts/brannboll.ttf') format('truetype');
+}
+
+:root {
+	--main-red: rgba(226, 29, 65, 1);
+	--main-yellow: rgba(255, 226, 67, 1);
+	--white: rgba(255, 255, 255, 1);
+	--black: rgba(0, 0, 0, 1);
+}
+
+body {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	color: var(--black);
+	font-size: 14px;
+	margin: 0;
+}
+
+#header {
+	z-index: 10;
+	position: fixed;
+	width: 100%;
+	height: 100px;
+	background-color: rgba(0, 0, 0, 0.5);
+	top: 0px;
+}
+
+#header_logo {
+	position: relative;
+	float: left;
+	top: 50%;
+    left: 8%;
+    width: auto;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+#title {
+	position: relative;
+	float: left;
+    top: 50%;
+    left: 23%;
+    transform: translateX(-50%) translateY(-50%);
+    font-family: Helvetica, sans-serif;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 1);
+}
+
+#navigation {
+	position: absolute;
+	font-weight: bold;
+	top: 50%;
+    left: 80%;
+    width: 400px;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#navigation a, a:visited {
+	text-decoration: none;
+	color: var(--white);
+}
+
+#navigation a:hover {
+	color: rgba(255, 255, 255, .6);
+}
+
+#navigation span + span {
+	margin-left: 30px;
+}
+
+#welcome {
+	position: relative;
+	width: 100%;
+	height: 620px;
+	/* gradient background for different browsers */
+	background: -moz-linear-gradient(270deg, rgba(17,193,234,1) 0%, rgba(17,193,234,1) 38%, rgba(255,226,67,1) 100%);
+	background: -webkit-linear-gradient(270deg, rgba(17,193,234,1) 0%, rgba(17,193,234,1) 38%, rgba(255,226,67,1) 100%);
+	background: -o-linear-gradient(270deg, rgba(17,193,234,1) 0%, rgba(17,193,234,1) 38%, rgba(255,226,67,1) 100%);
+	background: -ms-linear-gradient(270deg, rgba(17,193,234,1) 0%, rgba(17,193,234,1) 38%, rgba(255,226,67,1) 100%);
+	background: linear-gradient(180deg, rgba(17,193,234,1) 0%, rgba(17,193,234,1) 38%, rgba(255,226,67,1) 100%);
+}
+
+#welcome_heading {
+	position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+	font-family: 'HeaderFont', Helvetica, Arial, sans-serif;
+	font-size: 90px;
+	color: var(--black);
+}
+
+
+.aboutme {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	width: 70%;
+	text-align: center;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 20px;
+    color: var(--black);
+}
+
+#welcome_border {
+	position: relative;
+	width: 100%;
+	height: 10px;
+	background-color: var(--main-red);
+}
+
+#projects {
+	position: relative;
+	width: 100%;
+	height: 670px;
+}
+
+#project_heading {
+	position: absolute;
+    top: 12%;
+    left: 21%;
+    transform: translateX(-50%) translateY(-50%);
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 35px;
+	font-weight: bold;
+	color: var(--black);
+}
+
+#projects_text {
+	position: absolute;
+	top: 50%;
+	left: 28%;
+	width: 500px;
+	transform: translateX(-50%) translateY(-50%);
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 30px;
+}
+
+#projects_text a, a:visited {
+	text-decoration: none;
+	color: var(--main-red);
+	font-weight: bold;
+}
+
+#projects_text a:hover {
+	color: rgba(226, 29, 65, .7);
+}
+
+#projects_text h1 {
+	padding: 0;
+	margin: 0;
+	font-size: 22px;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+#projects_text span a, a:visited {
+	color: var(--black);
+	font-weight: bold;
+	font-size: 18px;
+	padding: 10px;
+}
+
+#projects_text span a:hover {
+	color: rgba(0, 0, 0, .7);
+}
+
+#projects_images {
+	position: absolute;
+	top: 50%;
+	left: 76%;
+	width: 400px;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+
+/* FOOTER */
+#footer {
+	position: relative;
+	width: 100%;
+	height: 150px;
+	bottom: 0;
+	background-color: var(--black);
+}
+
+#footer_left {
+	float: left;
+	text-align: left;
+	position: absolute;
+	top: 50%;
+	left: 30%;
+	width: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	color: var(--white);
+	line-height: 30px;
+}
+
+#footer_right {
+	float: right;
+	text-align: right;
+	position: absolute;
+	top: 55%;
+	left: 70%;
+	width: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	color: var(--white);
+	line-height: 30px;
+}

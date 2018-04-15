@@ -1,0 +1,221 @@
+/**
+* Veronica Valenzuela Portfolio
+* Subpages CSS File
+* Created December 16, 2017
+**/
+
+:root {
+	--main-red: rgba(226, 29, 65, 1);
+	--main-yellow: rgba(255, 226, 67, 1);
+	--white: rgba(255, 255, 255, 1);
+	--black: rgba(0, 0, 0, 1);
+}
+
+/* ************* */
+/* ABOUT ME PAGE */
+/* ************* */
+#aboutme_section {
+	position: relative;
+	width: 100%;
+	height: 1200px;
+}
+
+#aboutme_text {
+	position: relative;
+	top: 33%;
+	left: 32%;
+	width: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	line-height: 30px;
+	font-size: 16px;
+}
+
+#aboutme_text h1 {
+	font-size: 35px;
+	font-weight: bold;
+	color: var(--black);
+}
+
+#aboutme_text a, a:visited {
+	text-decoration: none;
+	color: var(--main-red);
+	font-weight: bold;
+}
+
+#aboutme_text a:hover {
+	color: rgba(226, 29, 65, .7);
+}	
+
+#aboutme_images {
+	position: absolute;
+	float: right;
+	top: 33%;
+	left: 90%;
+	width: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+#sdsupic {
+	position: absolute;
+	float: left;
+	top: 78%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+
+
+/* ************ */
+/* ARTWORK PAGE */
+/* ************ */
+#art_section {
+	position: relative;
+	width: 100%;
+	height: 1300px;
+}
+
+#art_section h1 {
+	font-size: 35px;
+	font-weight: bold;
+	color: var(--black);
+}
+
+#art_section span a, a:visited {
+	color: var(--black);
+	font-weight: bold;
+	font-size: 18px;
+	padding: 10px;
+	text-decoration: none;
+}
+
+#art_section span a:hover {
+	color: rgba(0, 0, 0, .7);
+}
+
+#digitalart_text {
+	position: relative;
+	top: 30%;
+	left: 27%;
+	width: 40%;
+	transform: translateX(-50%) translateY(-50%);
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	line-height: 30px;
+	font-size: 16px;
+}
+
+#digitalart_images {
+	position: absolute;
+	top: 31%;
+	left: 73%;
+	width: 50%;
+	display: inline-block;
+	text-align: center;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+#digitalart_images img {
+	padding: 10px;
+}
+
+#digitalart_images img:hover {
+	opacity: .7;
+}
+
+#drawing_text {
+	position: relative;
+	top: 35%;
+	left: 73%;
+	width: 41%;
+	transform: translateX(-50%) translateY(-50%);
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	line-height: 30px;
+	font-size: 16px;
+}
+
+#drawing_images {
+	position: absolute;
+	top: 78%;
+	left: 25%;
+	width: 50%;
+	display: inline-block;
+	text-align: center;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+#drawing_images img {
+	border: 2px solid var(--black);
+	margin: 10px;
+}
+
+#drawing_images img:hover {
+	opacity: .8;
+}
+
+
+
+/* **************** */
+/* PROGRAMMING PAGE */
+/* **************** */
+#programming_section {
+	position: relative;
+	width: 100%;
+	height: 1400px;
+}
+
+#programming_section h1 {
+	font-size: 35px;
+	font-weight: bold;
+	color: var(--black);
+}
+
+#programming_section a, a:visited {
+	text-decoration: none;
+	color: var(--main-red);
+	font-weight: bold;
+}
+
+#programming_section a:hover {
+	color: rgba(226, 29, 65, .7);
+}	
+
+#mechatronics_text {
+	position: relative;
+	top: 32%;
+	left: 32%;
+	width: 52%;
+	transform: translateX(-50%) translateY(-50%);
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	line-height: 30px;
+	font-size: 16px;
+}
+
+#mechatronics_images {
+	position: absolute;
+	top: 33%;
+	left: 82%;
+	width: 30%;
+	display: inline-block;
+	text-align: center;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+#mechatronics_images img {
+	border: 2px solid var(--black);
+	margin: 15px;
+}
+
+#mechatronics_images img:hover {
+	opacity: .8;
+}
+
+#spawar_text {
+	position: relative;
+	top: 32%;
+	left: 50%;
+	width: 90%;
+	transform: translateX(-50%) translateY(-50%);
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	line-height: 30px;
+	font-size: 16px;
+}
