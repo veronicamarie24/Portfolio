@@ -1,0 +1,547 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Veronica Valenzuela | Art 240 Website Fall 2017</title>
+
+
+<link href="src/css/lightbox.css" rel="stylesheet">
+<style type="text/css">
+	
+	body {
+		margin: 0px;
+		background-color: rgba(255,255,255,1.00);
+	}
+	
+	#wrapper {
+		position: relative;
+		width: auto;
+		height: auto;
+		margin: 30px auto 0px auto;
+	}
+	
+	header {
+		position: fixed;
+		width: 100%;
+		height: 150px;
+		top: 0px;
+		background-color: rgba(0,0,0,1.00);
+		z-index: 10;
+		text-align: center;
+		color: rgba(255,255,255,1.00);
+	}
+	
+	#banner a, a:visited{
+		color: rgba(252,15,55,1.00);
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-weight: bold;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 20px;
+		padding: 15px;
+	}
+	
+	#banner a:hover{
+		color: rgba(255,255,255,1.00);
+	}
+	
+	#banner img{
+		position: absolute;
+		left: 30px;
+		top: 25px;
+	}
+	
+	.spacer {
+		width: 100%;
+		height: 160px;
+	}
+	
+	.box_section_blue {
+		position: relative;
+		width: 950px;
+		height: auto;
+		margin: auto;
+		border: 10px solid rgba(39,194,232,1.00);
+		border-radius: 20px;
+	}
+	
+	.box_section_red {
+		position: relative;
+		width: 950px;
+		height: auto;
+		margin: auto;
+		border: 10px solid rgba(252,15,55,1.00);
+		border-radius: 20px;
+	}
+	
+	.box_section_yellow {
+		position: relative;
+		width: 950px;
+		height: auto;
+		margin: auto;
+		border: 10px solid rgba(254,225,83,1.00);
+		border-radius: 20px;
+	}
+	
+	.title_left_align {
+		position: relative;
+		width: 1280px;
+		height: 100px;
+		line-height: 100px;
+		text-align: left;
+		padding: 0px;
+	}
+	
+	.title_left_align h1 {
+		font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+		font-size: 38px;
+		font-weight: 700;
+		color: rgba(0,0,0,1.00);
+		margin: 0 0 0 20px;
+	}
+	
+	.title_right_align {
+		position: relative;
+		width: auto;
+		height: 100px;
+		line-height: 100px;
+		text-align: right;
+		padding: 0px;
+	}
+	
+	.title_right_align h1 {
+		font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+		font-size: 38px;
+		font-weight: 700;
+		color: rgba(0,0,0,1.00);
+		margin: 0 30px 0 0;
+	}
+	
+	.content {
+		width: auto;
+		height: auto;
+		margin: 20px;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 16px;
+		line-height: 24px;
+	}
+	
+	#branding_logo {
+		position: relative;
+		width: 530px;
+		height: 520px;
+		display: table-cell;
+		vertical-align: middle;
+		margin-left: 20px;
+	}
+	
+	#branding_project_text {
+		position: absolute;
+		left: 375px;
+		top: 65px;
+		width: 550px;
+	}
+	
+	.spacer2 {
+		width: 100%;
+		height: 100px;
+	}
+	
+	#sketch_images {
+		position: relative;
+		width: 500px;
+		height: 560px;
+	}
+	
+	#sketch_images img {
+		margin: 10px;
+		border: 2px solid rgba(0,0,0,1.00);
+		border-radius: 10px;
+	}
+	
+	#sketch_text {
+		position: absolute;
+		width: 500px;
+		left: 410px;
+		top: 100px;
+		font-size: 20px;
+		line-height: 32px;
+	}
+	
+	#vector_text {
+		position: relative;
+		width: 500px;
+		height: 430px;
+		margin: 10px;
+		padding-top: 35px;
+		font-size: 22px;
+		line-height: 32px;
+	}
+	
+	#vector_images {
+		position: absolute;
+		left: 560px;
+		top: 40px;
+	}
+	
+	#vector_images img {
+		margin: 15px;
+	}
+	
+	#color_studies_images {
+		position: relative;
+		width: 500px;
+		height: 510px;
+		margin-top: -50px;
+	}
+	
+	#color_studies_images img {
+		margin: 10px;
+	}
+	
+	#color_studies_text {
+		position: absolute;
+		width: 500px;
+		left: 420px;
+		top: 115px;
+		font-size: 20px;
+		line-height: 32px;
+	}
+	
+	#layout_text {
+		position: relative;
+		width: 450px;
+		height: 470px;
+		margin: 10px;
+		padding-top: 5px;
+		padding-left: 20px;
+		font-size: 20px;
+		line-height: 32px;
+	}
+	
+	#layout_text a, a:visited {
+		text-decoration: none;
+		color: rgba(39,194,232,1.00);
+		font-weight: bold;
+	}
+	
+	#layout_text a:hover {
+		color: black;
+	}
+	
+	#layout_images {
+		position: absolute;
+		left: 570px;
+		top: 120px;
+	}
+	
+	#layout_images img {
+		margin: 15px;
+		border: 7px solid rgba(0,0,0,1.00);
+		border-radius: 30px;
+	}
+	
+	#layout_images img:hover {
+		border: 7px solid rgba(252,15,55,1.00);
+		opacity: .7;
+	}
+	
+	#poster_images {
+		position: relative;
+		width: 500px;
+		height: 570px;
+		padding-top: 80px;
+		padding-left: 5px;
+	}
+	
+	#poster_images img {
+		margin: 10px;
+		border: 2px solid rgba(0,0,0,1.00);
+		border-radius: 10px;
+	}
+	
+	#poster_images img:hover {
+		opacity: .7;
+	}
+	
+	#poster_text {
+		position: absolute;
+		width: 540px;
+		left: 380px;
+		top: 100px;
+		font-size: 20px;
+		line-height: 32px;
+	}
+	
+	#wire_frame_text {
+		position: relative;
+		width: 520px;
+		height: 400px;
+		margin: 10px;
+		padding-left: 10px;
+		font-size: 20px;
+		line-height: 32px;
+	}
+	
+	#wire_frame_images {
+		position: absolute;
+		left: 590px;
+		top: 150px;
+	}
+	
+	#wire_frame_images img {
+		margin: 15px;
+		border: 3px solid rgba(0,0,0,1.00);
+		border-radius: 30px;
+	}
+	
+	#wire_frame_images img:hover {
+		opacity: .7;
+	}
+	
+	#footer {
+		font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+		font-size: 20px;
+		position: absolute;
+		width: 100%;
+		height: 180px;
+		bottom: 0;
+		background-color: rgba(0,0,0,1.00);
+		z-index: 10;
+		text-align: center;
+		color: rgba(255,255,255,1.00);
+	}
+	
+	#left {
+		text-align: left;
+		float: left;
+		padding-left: 80px;
+		line-height: 40px;
+	}
+	
+	#right {
+		float: right;
+		text-align: right;
+		padding-right: 80px;
+		line-height: 40px;
+	}
+	
+	#centered { 
+		text-align: center;
+	}
+	
+</style>
+</head>
+
+<body>
+
+	<div id="wrapper">
+		<!-- HEADER AND BANNER -->
+		<header id="banner">
+		<br /><br />
+			<img src="images/brand_color_studies/logo1-100.png" width="100" height="100">
+			<a href="#link1">branding project</a><a href="#link2">brand sketches</a><a href="#link3">brand vector art</a><a href="#link4">brand color studies</a><br /><br /><a href="#link5">branding layout</a><a href="#link6">poster</a><a href="#link7">wire frame</a>
+		</header>
+		<div class="spacer">
+			&nbsp;
+		</div>
+		<div class="spacer">
+			<center><img src="images/bannername.png" width="900" height="252" alt="Veronica Valenzuela art 240 digital media"></center>
+		</div>
+		<div class="spacer" id="link1">
+			&nbsp;
+		</div>
+
+		<!-- BRANDING PROJECT CONTENT AND TITLE -->
+		<div class="box_section_yellow">
+			<div class="title_left_align"><h1>branding project</h1></div>
+			<div class="content">
+				<div id="branding_logo"><img src="images/big-logo.png" width="300px" alt="Black and White Logo"></div>
+				<div id="branding_project_text">
+					<br />
+					<img src="images/quote.png" alt="quote">
+					<p>&emsp; For the branding assignment the class is told to make a logo out of their name. We have to see the connection between the principles of design and the traits that make an effective logo in order to make our brand successful. To fully grasp these concepts, we need to make sketches, design vector art, and write a statement about our design process.</p>
+					<p>&emsp; My name is very long, so I know immediately that I will not be able to use my entire name in the logo. I first start sketching my initials together, since two V’s seem visually interesting, but it just becomes too complicated and often looks like a W. I struggle at first to utilize my name in an efficient way while also making my logo convey my personality. The class is reminded that simplicity is a key factor in making their brand effective, so I decide to use a single V instead of making things more complex than they need to be.</p>
+					<p>&emsp; The logo I end up with is a circle with a serif V in the center, with drop shadow behind it to show depth. I combine my desire to make my logo interesting with the idea of simplicity so that my logo can be effective in small and big representations. This project sheds light on how a design does not need to be complex and intricate in order to be successful.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="spacer2" id="link2">
+			&nbsp;
+		</div>
+
+		<!-- |||||||||||||||||||||||||||||||||||||||||||||| -->
+		<!-- BRAND SKETCHES SECTION -->
+		<!-- |||||||||||||||||||||||||||||||||||||||||||||| -->
+		<div class="box_section_red">
+			<div class="title_right_align"><h1>brand sketches</h1></div>
+			<div class="content">
+				<div id="sketch_images">
+					<img src="images/brand_sketches/sketch01.png" width="150px" height="150px" alt="Brand Sketch 1">
+				  <img src="images/brand_sketches/sketch02.png" width="150px" height="150px" alt="Brand Sketch 2">
+				  <img src="images/brand_sketches/sketch04.png" width="150px" height="150px" alt="Brand Sketch 3">
+				  <img src="images/brand_sketches/sketch03.png" width="150px" height="150px" alt="Brand Sketch 4">
+				  <img src="images/brand_sketches/sketch06.png" width="150px" height="150px" alt="Brand Sketch 5">
+				  <img src="images/brand_sketches/sketch05.png" width="150px" height="150px" alt="Brand Sketch 6">
+				</div>
+				<div id="sketch_text">
+					<p>&emsp;The branding project's first step was to make at least 50 sketches of our logo ideas. I started off with geometric shapes and kept simplicity in mind. While my first logos featured a sans-serif, bold, block-like V, I soon became more attracted to the sophisticated feel of the serif style font.</p>
+					<p>&emsp;While the straight and pointy edges in the style of the first two sketches was my favorite design to begin with, the rounded logos soon became more interesting to me. I developed that idea further, as I continued to mess around with the placement of the V within the circle.</p>
+					<p>&emsp;A simple serif V in a circle wasn't enough for me, so I knew I wanted to expand it a bit further without going over the top. The hollow V with a drop shadow felt like a perfect balance of design, personality, and simplicity.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="spacer2" id="link3">
+			&nbsp;
+		</div>
+
+
+		<!-- |||||||||||||||||||||||||||||||||||||||||||||| -->
+		<!-- BRAND VECTOR SECTION -->
+		<!-- |||||||||||||||||||||||||||||||||||||||||||||| -->
+	  <div class="box_section_blue">
+			<div class="title_left_align"><h1>brand vector art</h1></div>
+		<div class="content">
+			<div id="vector_text">
+				<p>&emsp;Once done with our sketches, we would move onto the vector art for our brand. This allowed us to further develop our sketches and see what they would look like as a digital logo.</p>
+				<p>&emsp;I created my favorite sketches into logos, and I was still mostly attracted to the circle design rather than the pointed edges. Adding a border to the circle made it stand out more and left me with more options for using different colors.</p>
+			</div>
+			<div id="vector_images">
+				<img src="images/brand_vector_art/vector01.png" width="150px" height="150px" alt="Vector Art 1">
+	    		<img src="images/brand_vector_art/vector02.png" width="150px" height="150px" alt="Vector Art 1">
+	    		<img src="images/brand_vector_art/vector03.png" width="150px" height="150px" alt="Vector Art 1">
+	    		<img src="images/brand_vector_art/vector04.png" width="150px" height="150px" alt="Vector Art 1">
+	    		<img src="images/brand_vector_art/vector05.png" width="150px" height="150px" alt="Vector Art 1">
+	    		<img src="images/brand_vector_art/vector06.png" width="150px" height="150px" alt="Vector Art 1">
+		    </div>
+	  	</div>
+		</div>
+
+		<div class="spacer2" id="link4">
+			&nbsp;
+		</div>
+
+
+
+		<!-- |||||||||||||||||||||||||||||||||||||||||||||| -->
+		<!-- BRAND COLOR STUDIES SECTION -->
+		<!-- |||||||||||||||||||||||||||||||||||||||||||||| -->
+		<div class="box_section_yellow" id="brand_color_studies">
+			<div class="title_right_align"><h1>brand color studies</h1></div>
+			<div class="content">
+				<div id="color_studies_images">
+					<img src="images/brand_color_studies/colorstudy02.png" width="150px" height="150px" alt="Color Study 1">
+					<img src="images/brand_color_studies/colorstudy06.png" width="150px" height="150px" alt="Color Study 2">
+					<img src="images/brand_color_studies/colorstudy01.png" width="150px" height="150px" alt="Color Study 3">
+					<img src="images/brand_color_studies/colorstudy04.png" width="150px" height="150px" alt="Color Study 1">
+					<img src="images/brand_color_studies/colorstudy03.png" width="150px" height="150px" alt="Color Study 1">
+					<img src="images/brand_color_studies/logo1-100.png" width="150px" height="150px" alt="Color Study 1">
+				</div>
+				<div id="color_studies_text">
+					<p>&emsp;Finding a color pallette that worked with my design was one of the most difficult parts. The logo looked incomplete in black and white, so I knew I needed something that popped.</p>
+					<p>&emsp;The logo itself was simple, which meant that the colors would make it stand out more against the page. I started playing with jewel toned and acidic looking colors, since they contrasted each other. The contrast sometimes was too harsh, like the pink and the yellow, meaning I had to find just the right combination to make the logo look bright without hurting the viewer's eyes.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="spacer2" id="link5">
+			&nbsp;
+		</div>		
+		
+		<!-- |||||||||||||||||||||||||||||||||||||||||||||| -->
+		<!-- BRANDING LAYOUT SECTION -->
+		<!-- |||||||||||||||||||||||||||||||||||||||||||||| -->
+		<div class="box_section_red" id="branding_layout">
+			<div class="title_left_align"><h1>branding layout</h1></div>
+			<div class="content">
+				<div id="layout_text">
+					<p>&emsp;The branding layout features three of our color studies on a black and white background. We analyzed our logos at 33%, 66%, and 100% scale.</p>
+					<p>&emsp;When I picked the blue, yellow, and red logo as my final choice, I got the vibe of a super hero comic. The bright colors reminded me of pop art, which takes influence from comic book styles, and the circle with the V reminded me of the logo of <a href="images/branding_layout/wonderwoman.png" data-lightbox="ww" data-title="Wonder Woman Logo">Wonder Woman</a>. I crafted the layout with comic style boxes and fonts, as well as using the color pallette of my logo throughout.</p>
+					
+				</div>
+				<div id="layout_images">
+					<a href="images/branding_layout/coverSmaller.png" data-lightbox="roadtrip" data-title="Click the right side of the image to go to the next page."><img src="images/branding_layout/coverSmaller.png" width="300"></a>
+					<a href="images/branding_layout/page1.png" data-lightbox="roadtrip" data-title="Click the right side of the image to go to the next page."></a>
+					<a href="images/branding_layout/page2.png" data-lightbox="roadtrip" data-title="Click the right side of the image to go to the next page."></a>
+					<a href="images/branding_layout/page3.png" data-lightbox="roadtrip" data-title="Click the right side of the image to go to the next page."></a>
+					<a href="images/branding_layout/page4.png" data-lightbox="roadtrip" data-title="Click the right side of the image to go to the next page."></a>
+					<a href="images/branding_layout/page5.png" data-lightbox="roadtrip" data-title="Click the right side of the image to go to the next page."></a>
+					<a href="images/branding_layout/page6.png" data-lightbox="roadtrip" data-title="Click the right side of the image to go to the next page."></a>
+					<a href="images/branding_layout/page7.png" data-lightbox="roadtrip" data-title="Click the right side of the image to go to the next page."></a>
+					<center><i>Click the cover to view the layout.</i></center>
+				</div>
+				</div>
+	  	</div>
+
+		<div class="spacer2" id="link6">
+			&nbsp;
+		</div>
+		
+		
+		<!-- |||||||||||||||||||||||||||||||||||||||||||||| -->
+		<!-- POSTER SECTION -->
+		<!-- |||||||||||||||||||||||||||||||||||||||||||||| -->
+		<div class="box_section_blue" id="poster">
+			<div class="title_right_align"><h1>poster</h1></div>
+			<div class="content">
+				<div id="poster_images">
+					<a href="images/poster/poster.png" data-lightbox="poster" data-title="Poster"><img src="images/poster/poster.png" width="300"></a>
+				</div>
+				<div id="poster_text">
+					<p>&emsp;For the poster assignment, students need to find a past, present, or future cause they feel strongly about. This cause is represented through visual imagery and placed stylistically on a digital poster to convey our message.</p>
+					<p>&emsp;Since I am a Computer Science major, I participate in a robotics team on campus, and my internship involves robotics, this causes me to think a lot about machinery being sentient.</p>
+					<p>&emsp;Giving life or personality to a non organic form is debated in the technical world. Some people see these robots as possibly becoming conscious of their decisions and feelings. Others think this is silly, since robots do not have an organic brain and are not born as we are. All of their parts are manmade and consist of metal, plastic, etc.</p>
+					<p>&emsp;Although this is not a current issue, since robots are nowhere near operating the same as a human being, it may become a topic of debate in the future. Robots are progressing constantly as we use them for different tasks.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="spacer2" id="link7">
+			&nbsp;
+		</div>
+		
+		
+		<!-- |||||||||||||||||||||||||||||||||||||||||||||| -->
+		<!-- WIRE FRAME SECTION -->
+		<!-- |||||||||||||||||||||||||||||||||||||||||||||| -->
+		<div class="box_section_yellow" id="wire_frame">
+			<div class="title_right_align"><h1>wire frame</h1></div>
+			<div class="content">
+				<div id="wire_frame_images">
+					<a href="images/wireframe/wireframe.png" target="_blank"><img src="images/wireframe/smallwireframe.png" width="300px" alt="Wire Frame"></a>
+				</div>
+				<div id="wire_frame_text">
+					<p>&emsp;The wire frame allows you to lay out the organization of your website. It is important to put the different div classes and IDs in your wire frame to know how big each section is and how it flows with the document.</p>
+					<p>&emsp;Making a wire frame of my website helped me to better understand the structure of my code. From the wire frame, I could build my site and add to it quickly.</p>
+					<p>&emsp;When designing websites in the future, I think I will make a rough wire frame to first map out my sections. Then after developing each section in code, I would add the details.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="spacer2">
+			&nbsp;
+		</div>
+		
+		<div class="spacer2">
+			&nbsp;
+		</div>
+		
+		<div id="footer">
+    		<p id="left">Website Final Project<br />
+    		Art 240 - Digital Media <br />
+    		San Diego State University <br /></p>
+    		<p id="right">
+    			<font size="4">"Change the world by being yourself."<br />
+    			<b>-Amy Poehler</b></font>
+    			<br />&copy; Veronica Valenzuela 2017
+    		</p>
+    		<p id="centered"><img src="images/comicpow.png" alt="Pow!"></p>
+		</div>
+	
+	</div>
+	
+	<script src="src/js/lightbox-plus-jquery.js"></script>
+</body>
+</html>
