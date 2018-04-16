@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Cookie|Heebo');
+/* font-family: 'Heebo', sans-serif;
+font-family: 'Cookie', cursive; */
+
+body {
+	font-family: 'Heebo', sans-serif;
+	font-size: 1.1em;
+	margin: 0;
+	padding: 0;
+	color: #000000;
+	font-weight: 400;
+}
+
+#header {
+	width: 100%;
+	height: 60px;
+	background-color: #F7C1BB;
+	color: #353A47;
+}
+
+#header h1 {
+	font-size: 1.7em;
+	margin: 0;
+}
+
+#title {
+	float: left;
+	padding: 8px 0 0 40px;
+}
+
+#navigation {
+	float: right;
+	text-align: right;
+	padding: 15px 40px 0 0;
+}
+
+#navigation a, a:visited {
+	color: #041F35;
+	text-decoration: none;
+	font-weight: bold;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+}
+
+#navigation a:hover {
+	opacity: .5;
+}
+
+#navigation span {
+	padding: 0 20px 0 0;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#summaryBackground {
+	position: relative;
+	width: 100%;
+	height: 500px;
+	background-color: #353A47;
+}
+
+#summary {
+	position: absolute;
+	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	width: 70%;
+	height: 80%;
+	background-color: #FFFFFF;
+}
+
+#portrait {
+	float: left;
+	padding: 30px 20px;
+}
+
+#text {
+	position: relative;
+	margin: 30px;
+	font-size: .9em;
+}
+
+#text h1 {
+	font-size: 2.5em;
+	padding: 0;
+	margin: 0;
+}
+
+#text h2 {
+	font-family: 'Cookie', serif;
+	color: #B7833E;
+	font-size: 1.5em;
+	font-weight: 400;
+	padding: 0;
+	margin: -10px 0 10px 0;
+}
+
+#text img {
+	margin: 10px 5px -5px 0;
+}
+
+#projects {
+	
+}
+
+#projects h1 {
+	text-align: center;
+	font-size: 2.5em;
+	padding-top: 25px;
+}
