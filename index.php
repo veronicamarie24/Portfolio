@@ -1,23 +1,5 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Veronica Valenzuela's Portfolio</title>
-<link href="style.css" rel="stylesheet" type="text/css">
-</head>
-
-<body>
-	<div id="header">
-		<div id="title" class="clearfix"><h1>Portfolio</h1></div>
-		<div id="navigation" class="clearfix">
-			<span><a href="/index.php">Home</a></span>
-			<span><a href="/aboutme.php">About Me</a></span>
-			<span><a href="/aboutme.php">Resume</a></span>
-			<span><a href="/programming.php">Projects</a></span>
-		</div>
-	</div>
-	
-	<div id="summaryBackground">
+<?php include("header.php"); ?>
+<div id="summaryBackground">
 		<div id="summary">
 			<div id="portrait" class="clearfix">
 				<img src="images/portrait.png" height="350px" alt="portrait">
@@ -39,9 +21,9 @@
 		<h1>Projects</h1>
 		<img src="images/mechatronics/team.png" alt="Mechatronics Team">
 		<div class="text clearfix">
-			<a href="www.sdsumechatronics.org" target="_blank">Mechatronics</a> is a robotics club at San Diego State University. I work alongside a group of engineers (mechanical, electrical, and computer science) to make an autonomous underwater vehicle to compete in San Diego's International Robosub Competition.
+			<a href="http://www.sdsumechatronics.org" target="_blank">Mechatronics</a> is a robotics club at San Diego State University. I work alongside a group of engineers (mechanical, electrical, and computer science) to make an autonomous underwater vehicle to compete in San Diego's International Robosub Competition.
 			<br /><br />
-			<a href="/projects/mechatronics.php">Read More</a>
+			<a href="/projects.php">Read More</a>
 		</div>
 		
 		<div id="vectors"><img src="images/artwork/allvectors.png" alt="Vector Art" width="600"></div>
@@ -49,18 +31,7 @@
 			Since I'm an interdisciplinary student, I consistently develop my skills in both programming and digital art. I've recently created a series of logos for myself with Adobe Illustrator while also learning other Adobe applications like Photoshop, InDesign, and Dreamweaver. I also designed this portfolio from scratch.
 
 			<br /><br />
-			<a href="/projects/logoDesign.php">Read More</a>
+			<a href="/projects.php">Read More</a>
 		</div>
 	</div>
-	
-	<div id="footer">
-		<div class="textLeft">
-			“Do everything by hand, even when using the computer.” <br />
-				- Hayao Miyazaki
-		</div>
-		<div class="textRight">
-			© 2018 Veronica Valenzuela
-		</div>
-	</div>
-</body>
-</html>
+<?php include("footer.php"); ?>

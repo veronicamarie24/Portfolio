@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Retro Pixel-Game Steampunk iPhone Interface</title>
+
+<script src="css-js/on-click.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="css-js/style.css">
+</head>
+
+<body>	
+	<div id="container">		
+		<div id="expand" onClick="openMenu()">
+			<div id="bars"></div>
+			<div id="verizon"></div>
+			<div id="wifi"></div>
+			<div id="time"></div>
+			<div id="bluetooth"></div>
+			<div id="percent"></div>
+			<div id="battery"></div>
+		</div>
+		
+		<div id="goToMain" onClick="mainScreen()"></div>
+		<div id="goToAmazon" onClick="amazonScreen()"></div>
+		
+		<!-- AMAZON SCREEN ELEMENTS: only visible when amazonScreen() runs. -->
+		<div id="amazonRectangle"></div>
+		<div id="amazonLogo"></div>
+		<div id="amazonCart"></div>
+		<div id="amazonBook"></div>
+		<div id="amazonGames"></div>
+		<div id="amazonMusic"></div>
+		<div id="amazonText"></div>
+		<!-- END AMAZON SCREEN ELEMENTS -->
+		
+		<!-- PHONE SCREEN ELEMENTS: only visible when phoneScreen() runs. -->
+		<div id="back" onClick="mainScreen()">Back</div>
+		<!-- END PHONE SCREEN ELEMENTS -->
+		
+		<!-- EXPAND MENU ELEMENTS: only visible when openMenu() runs. -->f
+		<div id="notifications"></div>
+		<div id="date"></div>
+		<div id="location"></div>
+		<div id="wifisetting"></div>
+		<div id="rotation"></div>
+		<div id="airplane"></div>
+		<div id="mute"></div>
+		<div id="arrow" onClick="resetMenu()"></div> <!-- keep this div out of the expand div -->
+		<!-- END EXPAND MENU ELEMENTS -->
+		
+		<!-- ICONS ON THE MAIN SCREEN -->
+		<div id="appstore"></div>
+		<div id="clock"></div>
+		<div id="contacts"></div>
+		<div id="gallery"></div>
+		
+		<div id="safari"></div>
+		<div id="messenger"></div>
+		<div id="phone" onClick="phoneScreen()"></div>
+		<div id="camera"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,496 @@
+@charset "UTF-8";
+
+/* This is a Google font. */
+@font-face {
+    font-family: "Press Start";
+    src: url("../fonts/fonts/Press_Start_2P/PressStart2P-Regular.ttf") format("truetype"),
+		url("../fonts/Press_Start_2P/PressStart2P-Regular.otf") format("opentype"),
+		url("../fonts/Press_Start_2P/PressStart2P-Regular.woff2") format("woff2");
+}
+
+/* ------GLOBAL STYLES-----*/
+body {
+	margin:0 0 0 0;
+	background-color:rgba(0,0,0,1.00);
+}
+
+img {
+	width:100%;
+}
+/* ------END GLOBAL STYLES-----*/
+
+#container {
+	position:relative;
+	width:380px;
+	height:676px;
+	margin:0 auto 0 auto;
+	padding:0 0 0 0;
+	background-image: url(../images/main.png);
+	transition: all 0.8s ease-in-out;
+}
+
+#goToMain {
+	position: absolute;
+	left: 45%;
+	bottom: 15%;
+	height: 15px;
+	width: 15px;
+	cursor: pointer;
+	background-color: rgba(202,202,202,1);
+	border-radius: 10px;
+	transition:all 0.8s ease-in-out;
+	z-index: 800;
+}
+
+
+
+/* AMAZON SCREEN */
+#goToAmazon {
+	position: absolute;
+	left: 53%;
+	bottom: 15%;
+	height: 15px;
+	width: 15px;
+	cursor: pointer;
+	background-color: rgba(202,202,202,0.4);
+	border-radius: 10px;
+	transition:all 0.8s ease-in-out;
+	z-index: 800;
+}
+
+#amazonRectangle {
+	position: absolute;
+	top: 20%;
+	left: 4%;
+	width: 350px;
+	height: 332px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background-image: url(../images/amazon/bgRectangle.png);
+	transition: all 0.8s ease-in-out;
+	opacity: 0;
+}
+
+#amazonLogo {
+	position: absolute;
+	top: 22%;
+	left: 13%;
+	width: 290px;
+	height: 91px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background-image: url(../images/amazon/logo.png);
+	transition: all 0.8s ease-in-out;
+	opacity: 0;
+}
+
+#amazonCart {
+	position: absolute;
+	top: 38%;
+	left: 11%;
+	width: 55px;
+	height: 64px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background-image: url(../images/amazon/cart.png);
+	transition: all 0.8s ease-in-out;
+	opacity: 0;
+}
+
+#amazonBook {
+	position: absolute;
+	top: 38%;
+	left: 32%;
+	width: 55px;
+	height: 64px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background-image: url(../images/amazon/book.png);
+	transition: all 0.8s ease-in-out;
+	opacity: 0;
+}
+
+#amazonGames {
+	position: absolute;
+	top: 38%;
+	left: 53%;
+	width: 55px;
+	height: 64px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background-image: url(../images/amazon/games.png);
+	transition: all 0.8s ease-in-out;
+	opacity: 0;
+}
+
+#amazonMusic {
+	position: absolute;
+	top: 38%;
+	left: 74%;
+	width: 55px;
+	height: 64px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background-image: url(../images/amazon/music.png);
+	transition: all 0.8s ease-in-out;
+	opacity: 0;
+}
+
+#amazonText {
+	position: absolute;
+	top: 53%;
+	left: 12%;
+	width: 290px;
+	height: 85px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background-image: url(../images/amazon/text.png);
+	transition: all 0.8s ease-in-out;
+	opacity: 0;
+}
+
+
+
+
+/* DROP DOWN MENU */
+#expand {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:25px;
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	background-color:rgba(205,205,205,0.5);
+	overflow:hidden;
+	transition:all 0.8s ease-in-out;
+	z-index: 900;
+}
+
+#arrow {
+	position: absolute;
+	bottom: 40px;
+	left: 40%;
+	width: 70px;
+	height: 41px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background-image: url(../images/dropdown/arrow.png);
+	transition: all 0.8s ease-in-out;
+	opacity: 0;
+	cursor: pointer;
+	z-index: 1000;
+}
+
+#notifications {
+	position: absolute;
+	top: 30px;
+	left: 10%;
+	width: 300px;
+	height: 26px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background-image: url(../images/dropdown/notifications.png);
+	transition: all 0.8s ease-in-out;
+	opacity: 0;
+	z-index: 1000;
+}
+
+#date {
+	position: absolute;
+	top: 75px;
+	left: 9%;
+	width: 150px;
+	height: 65px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background-image: url(../images/dropdown/date.png);
+	transition: all 0.8s ease-in-out;
+	opacity: 0;
+	z-index: 1000;
+}
+
+#location {
+	position: absolute;
+	top: 170px;
+	left: 40px;
+	width: 80px;
+	height: 98px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background-image: url(../images/dropdown/location.png);
+	transition: all 0.8s ease-in-out;
+	opacity: 0;
+	z-index: 1000;
+}
+
+#wifisetting {
+	position: absolute;
+	top: 170px;
+	left: 145px;
+	width: 80px;
+	height: 98px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background-image: url(../images/dropdown/wifi.png);
+	transition: all 0.8s ease-in-out;
+	opacity: 0;
+	z-index: 1000;
+}
+
+#rotation {
+	position: absolute;
+	top: 170px;
+	left: 250px;
+	width: 92px;
+	height: 98px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background-image: url(../images/dropdown/rotate.png);
+	transition: all 0.8s ease-in-out;
+	opacity: 0;
+	z-index: 1000;
+}
+
+#airplane {
+	position: absolute;
+	top: 290px;
+	left: 90px;
+	width: 80px;
+	height: 98px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background-image: url(../images/dropdown/airplane.png);
+	transition: all 0.8s ease-in-out;
+	opacity: 0;
+	z-index: 1000;
+}
+
+#mute {
+	position: absolute;
+	top: 290px;
+	left: 200px;
+	width: 78px;
+	height: 98px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background-image: url(../images/dropdown/mute.png);
+	transition: all 0.8s ease-in-out;
+	opacity: 0;
+	z-index: 1000;
+}
+
+
+
+/* TOP BAR */
+#bars {
+	position: absolute;
+	top: 7px;
+	left: 10px;
+	width: 15px;
+	height: 12px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background-image: url(../images/main/bars.png);
+}
+
+#verizon {
+	position: absolute;
+	top: 10px;
+	left: 30px;
+	width: 61px;
+	height: 8px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background-image: url(../images/main/verizon.png);
+}
+
+#wifi {
+	position: absolute;
+	top: 7px;
+	left: 100px;
+	width: 16px;
+	height: 12px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background-image: url(../images/main/wifi.png);
+}
+
+#time {
+	position: absolute;
+	top: 8px;
+	left: 44%;
+	width: 61px;
+	height: 8px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background-image: url(../images/main/time.png);
+}
+
+#bluetooth {
+	position: absolute;
+	top: 6px;
+	left: 300px;
+	width: 8px;
+	height: 15px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background-image: url(../images/main/bluetooth.png);
+}
+
+#percent {
+	position: absolute;
+	top: 9px;
+	left: 320px;
+	width: 26px;
+	height: 8px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background-image: url(../images/main/batterytext.png);
+}
+
+#battery {
+	position: absolute;
+	top: 8px;
+	left: 350px;
+	width: 26px;
+	height: 10px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background-image: url(../images/main/battery.png);
+}
+
+
+
+/* MAIN SCREEN ICONS */
+#appstore {
+	position: absolute;
+	top: 50px;
+	left: 25px;
+	width: 60px;
+	height: 70px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background-image: url(../images/icons/appstore.png);
+	transition: all 0.8s ease-in-out;
+	opacity: 1;
+	filter: blur(0);
+}
+
+#clock {
+	position: absolute;
+	top: 50px;
+	left: 115px;
+	width: 60px;
+	height: 71px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background-image: url(../images/icons/clock.png);
+	transition: all 0.8s ease-in-out;
+	opacity: 1;
+	filter: blur(0);
+}
+
+#contacts {
+	position: absolute;
+	top: 50px;
+	left: 205px;
+	width: 60px;
+	height: 70px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background-image: url(../images/icons/contacts.png);
+	transition: all 0.8s ease-in-out;
+	opacity: 1;
+	filter: blur(0);
+}
+
+#gallery {
+	position: absolute;
+	top: 50px;
+	left: 295px;
+	width: 60px;
+	height: 71px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background-image: url(../images/icons/gallery.png);
+	transition: all 0.8s ease-in-out;
+	opacity: 1;
+	filter: blur(0);
+}
+
+
+
+#safari {
+	position: absolute;
+	bottom: 8px;
+	left: 25px;
+	width: 60px;
+	height: 70px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background-image: url(../images/icons/safari.png);
+	transition: all 0.8s ease-in-out;
+	opacity: 1;
+	filter: blur(0);
+}
+
+#messenger {
+	position: absolute;
+	bottom: 8px;
+	left: 115px;
+	width: 60px;
+	height: 69px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background-image: url(../images/icons/messenger.png);
+	transition: all 0.8s ease-in-out;
+	opacity: 1;
+	filter: blur(0);
+}
+
+#phone {
+	position: absolute;
+	bottom: 8px;
+	left: 205px;
+	width: 60px;
+	height: 70px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background-image: url(../images/icons/phone.png);
+	transition: all 0.8s ease-in-out;
+	cursor: pointer;
+	opacity: 1;
+	filter: blur(0);
+}
+
+#camera {
+	position: absolute;
+	bottom: 8px;
+	left: 295px;
+	width: 60px;
+	height: 69px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background-image: url(../images/icons/camera.png);
+	transition: all 0.8s ease-in-out;
+	opacity: 1;
+	filter: blur(0);
+}
+
+
+#back {
+	position: absolute;
+	font-family: "Press Start", Arial, sans-serif;
+	font-size: 13px;
+	color: rgba(255,255,255,0.80);
+	bottom: -73px;
+	left: 39%;
+	width: 100px;
+	height: 100px;
+	margin: auto;
+	text-align: center;
+	opacity: 0;
+	cursor: pointer;
+	transition: all 0.8s ease-in-out;
+}

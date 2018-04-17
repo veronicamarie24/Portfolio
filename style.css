@@ -6,11 +6,26 @@ font-family: 'Cookie', cursive; */
 
 body {
 	font-family: 'Heebo', sans-serif;
-	font-size: 1.1em;
+	font-size: 1.5vw;
 	margin: 0;
 	padding: 0;
 	color: #000000;
 	font-weight: 400;
+}
+
+body a, a:visited {
+	color: #B7833E;
+	text-decoration: none;
+	font-weight: bold;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+}
+
+body a:hover {
+	opacity: .5;
 }
 
 #header {
@@ -21,19 +36,20 @@ body {
 }
 
 #header h1 {
-	font-size: 1.7em;
+	font-size: 26px;
 	margin: 0;
 }
 
 #title {
 	float: left;
-	padding: 8px 0 0 40px;
+	padding: 10px 0 0 40px;
 }
 
 #navigation {
 	float: right;
 	text-align: right;
-	padding: 15px 40px 0 0;
+	padding: 18px 40px 0 0;
+	font-size: 16px;
 }
 
 #navigation a, a:visited {
@@ -86,11 +102,11 @@ body {
 #text {
 	position: relative;
 	margin: 30px;
-	font-size: .9em;
+	font-size: 1.3vw;
 }
 
 #text h1 {
-	font-size: 2.5em;
+	font-size: 2.5vw;
 	padding: 0;
 	margin: 0;
 }
@@ -98,7 +114,7 @@ body {
 #text h2 {
 	font-family: 'Cookie', serif;
 	color: #B7833E;
-	font-size: 1.5em;
+	font-size: 1.9vw;
 	font-weight: 400;
 	padding: 0;
 	margin: -10px 0 10px 0;
@@ -109,11 +125,257 @@ body {
 }
 
 #projects {
-	
+	width: 70%;
+	margin: 0 auto;
+	font-size: 1.2vw;
 }
 
 #projects h1 {
 	text-align: center;
-	font-size: 2.5em;
+	font-size: 3.5vw;
 	padding-top: 25px;
+	padding-bottom: 15px;
+}
+
+#projects img {
+	float: left;
+	width: 55%;
+	padding-right: 30px;
+	padding-bottom: 70px;
+}
+
+#projects .text {
+	position: relative;
+	padding: 10px;
+	font-size: 1.5vw;
+}
+
+#footer {
+	width: 100%;
+	height: 130px;
+	bottom: 0;
+	padding-top: 80px;
+	background-color: #353A47;
+	color: #FFFFFF;
+	footer: 1.5vw;
+}
+
+#footer .textLeft {
+	padding-left: 50px;
+	float: left;
+}
+
+#footer .textRight {
+	padding-right: 50px;
+	float: right;
+}
+
+/* -------------- */
+/* about me page */
+/* -------------- */
+
+.about {
+	margin: auto;
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.about h1 {
+	margin: 0;
+	padding-bottom: 20px;
+}
+
+.about div {
+	background-color: #EFEFEF;
+	padding: 20px;
+	margin: 50px;
+}
+
+.about img {
+	width: 100%;
+}
+
+.about #aboutme {
+	width: 40%;
+}
+
+.about #sdsu {
+	margin: auto;
+	 width: 40%;
+}
+
+.about #likesDislikes {
+	width: 50%;
+	line-height: 50px;
+	text-align: center;
+	font-size: 1.6vw;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#likes {
+	margin: 0;
+	padding: 0;
+	padding-right: 40px;
+}
+
+#dislikes {
+	margin: 0;
+	padding: 0;
+	padding-left: 40px;
+}
+
+/* -------------- */
+/* projects page */
+/* -------------- */
+#projectsTitle {
+	text-align: center;
+	font-size: 2vw;
+}
+
+
+.project {
+	margin: auto;
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.project .aboutProject {
+	background-color: #EFEFEF;
+	padding: 20px;
+	margin: 30px;
+	width: 35%;
+}
+
+.project h1 {
+	margin: 0;
+	padding-bottom: 20px;
+}
+
+.project .projectPicture{
+	width: 40%;
+	margin: 30px;
+	padding: 20px;
+}
+
+.projectPicture img {
+	width: 100%;
+}
+
+
+
+/* -------- */
+/* smaller screen widths */
+/* -------- */
+
+@media only screen and (max-width: 1050px) {
+	.about {
+		flex-wrap: wrap;
+		font-size: 2vw;
+	}
+	
+	.about #aboutme {
+		width: 70%;
+	}
+	
+	.about #sdsu {
+		margin: auto;
+	 	width: 70%;
+	}
+	
+	#likes {
+		padding: 20px;
+		font-size: 2.2vw;
+	}
+	
+	#dislikes {
+		padding: 20px;
+		font-size: 2.2vw;
+	}
+	
+	#projectsTitle {
+		text-align: center;
+		font-size: 3vw;
+	}
+	
+	.project {
+		font-size: 2vw;
+	}
+
+	.project .aboutProject {
+		background-color: #EFEFEF;
+		padding: 20px;
+		margin: 30px;
+		width: 80%;
+	}
+
+	.project h1 {
+		margin: 0;
+		padding-bottom: 20px;
+	}
+
+	.project .projectPicture{
+		width: 90%;
+		margin: 30px;
+		padding: 20px;
+	}
+
+	.projectPicture img {
+		width: 100%;
+	}
+	
+	#footer {
+		font-size: 2vw;
+	}
+	
+}
+
+@media only screen and (max-width: 700px) {
+	body {
+		font-size: 2vw;
+	}
+	
+	#header {
+		font-size: .8vw;
+	}
+	
+	#navigation {
+		float: right;
+		text-align: right;
+		padding: 15px 10px 0 0;
+	}
+	
+	#likes {
+		padding: 20px;
+	}
+	
+	#dislikes {
+		padding: 20px;
+	}
+	
+	.project .aboutProject {
+		font-size: 3vw;
+	}
+
+	
+	#footer {
+		font-size: 3vw;
+		text-align: center;
+	}
+	
+	#footer .textLeft {
+		float: none;
+	}
+
+	#footer .textRight {
+		text-align: center;
+		float: none;
+		padding-left: 60px;
+	}
 }
