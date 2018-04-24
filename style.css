@@ -89,7 +89,7 @@ body a:hover {
 	top: 50%;
   	left: 50%;
   	transform: translate(-50%, -50%);
-	width: 70%;
+	width: 90%;
 	height: 80%;
 	background-color: #FFFFFF;
 }
@@ -102,7 +102,7 @@ body a:hover {
 #text {
 	position: relative;
 	margin: 30px;
-	font-size: 1.3vw;
+	font-size: 14px;
 }
 
 #text h1 {
