@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>Veronica Valenzuela's Portfolio</title>
 <link href="style.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="favicon.png">
 </head>
 
 <body>
@@ -15,5 +16,5 @@
 			<span><a href="/projects.php">Projects</a></span>
 		</div>
 	</div>
-	
+
 	<div class="clearfix"></div>
